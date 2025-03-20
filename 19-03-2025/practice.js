@@ -20,8 +20,8 @@ console.log(TotalMarks);  // 75%
 console.log(Physics);     // 80
 console.log(Chemistry);   // 89
 console.log(Language);    // 92
-console.log(LastName);    // Doe
-console.log(Ecology);     // 95
+console.log(LastName);    // Smith
+console.log(Ecology);     // 90
 console.log("--------------------------------------------------------------")
 
 //--------------------------------------------------------------------------------------------------------------------
