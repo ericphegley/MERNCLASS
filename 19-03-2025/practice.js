@@ -13,7 +13,7 @@ let Student = {
     }
 }
 
-let { FirstName, TotalMarks, Subject: { Physics, Chemistry, Language }, LastName = "Smith", Ecology = 90 } = Student;
+let { FirstName, TotalMarks, Subject: { Physics, Chemistry, Language }, LastName = "Smith", Geometry = 90 } = Student;
 
 console.log(FirstName);  // Stacy
 console.log(TotalMarks);  // 75%
@@ -21,7 +21,8 @@ console.log(Physics);     // 80
 console.log(Chemistry);   // 89
 console.log(Language);    // 92
 console.log(LastName);    // Smith
-console.log(Ecology);     // 90
+console.log(Geometry);     // 90
+//console.log(Histories) //Error not field
 console.log("--------------------------------------------------------------")
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -45,13 +46,16 @@ console.log("--------------------------------------------------------------")
 //create a funtion with name multiply which accepts three parameters, and return multiplication of all
 //but if we dont pass any parameter it returns 0
 
-function multiply(a = 0, b = 0, c = 0) {
+function multiply(a = 1, b = 1, c = 1) {
+    if(a == 1 && b == 1 && c == 1){
+        return 0;
+    }
     return a*b*c;
 }
 
 console.log(multiply(2, 3, 4)); // 24
-console.log(multiply(2, 3));    // 0 (since c defaults to 0)
-console.log(multiply());        // 0
+console.log(multiply(2, 3));    // 6 
+console.log(multiply());        // 1
 
 console.log("--------------------------------------------------------------")
 //--------------------------------------------------------------------------------------------------------------------
