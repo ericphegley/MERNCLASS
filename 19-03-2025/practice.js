@@ -13,7 +13,7 @@ let Student = {
     }
 }
 
-let { FirstName, TotalMarks, Subject: { Physics, Chemistry, Language }, LastName = "Doe", Ecology = 95 } = Student;
+let { FirstName, TotalMarks, Subject: { Physics, Chemistry, Language }, LastName = "Smith", Ecology = 90 } = Student;
 
 console.log(FirstName);  // Stacy
 console.log(TotalMarks);  // 75%
@@ -46,7 +46,7 @@ console.log("--------------------------------------------------------------")
 //but if we dont pass any parameter it returns 0
 
 function multiply(a = 0, b = 0, c = 0) {
-    return a * b * c;
+    return a*b*c;
 }
 
 console.log(multiply(2, 3, 4)); // 24
